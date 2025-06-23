@@ -11,7 +11,7 @@
 <body>
     <h1 class="text-primary">Page d'accueil</h1>
     <p>Bienvenue dans notre application <strong>PHP</strong></p>
-
+   
 
 
 
