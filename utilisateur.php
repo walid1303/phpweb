@@ -1,5 +1,8 @@
 <?php
 
+// démarrer la session
+session_start();
+
 $username = 'Doe';
 if ($_REQUEST['username'] !="") {
     $username = $_REQUEST['username'];
@@ -14,8 +17,10 @@ if (isset($_REQUEST['genre']) and $_REQUEST['genre']== 'homme') {
 $age = $_REQUEST['age'];
 $ville = $_REQUEST['ville'];
 
-
+// ajouter un cookie
 setcookie("nom", $username);
+// ajouter des données dans la session
+$_SESSION['nom'] = $username;
 
 ?>
 
